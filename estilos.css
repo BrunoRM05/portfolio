@@ -3,7 +3,14 @@
     padding: 0px;
 }
 
-.header-1 {
-    background-color: black;
+
+
+.menu-principal {
+    background-color: rgb(0, 0, 0);
     height: 60px;
+}
+main{
+    margin: 0 auto;
+    width: 980px;
+    position: relative;
 }
