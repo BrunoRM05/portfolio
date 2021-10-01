@@ -5,44 +5,36 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
-
-.menu-principal {
+nav
+{
+    display: grid;
+    grid-row: auto;
     width: 100%;
     background-color: #000000;
-    height: 40px;
-}
-main{
-    margin: 0 auto;
-    width: 100%;
-    position: relative;
+    height: 2rem; 
+    grid-template-areas: " logo redes";
 }
 
-.logo .link-logo
+
+.link-logo
 {
-    padding-left-: 10%;
-    width: 0%;
+
     color: white;
     font-size: 20px;
-    width: 50%;
-    float: left;
+    width: 100%;
+    grid-area: logo;
+    text-align: center;
     }
 
+!// remover item abaixo!////// 
+[]
 
-    
-    
-}
-.redes-sociais ul li  {
-    display: inline-block;
-    float: left;
-    size: 15px;
-    width: 20px;
-
-}
-
-.redes-sociais {
-    width: 50%;
-    float: right;
+.redes-sociais ul li i
+ {
+    width: 100%;
     size: 15px;
     padding: 0px;
+    grid-area: redes;
+    align-items: center;
+ }
     
