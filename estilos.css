@@ -5,10 +5,10 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-nav
+.header1
 {
     display: grid;
-    grid-row: auto;
+    
     width: 100%;
     background-color: #000000;
     height: 2rem; 
@@ -21,20 +21,23 @@ nav
 
     color: white;
     font-size: 20px;
-    width: 100%;
+    
     grid-area: logo;
+
+    align-self: center;
+
     text-align: center;
+
     }
 
-!// remover item abaixo!////// 
-[]
-
-.redes-sociais ul li i
+.redes  
  {
-    width: 100%;
-    size: 15px;
-    padding: 0px;
     grid-area: redes;
-    align-items: center;
- }
+    align-self: center;
+    text-align: center;
     
+ }
+
+ a {
+     align-items: center;
+ }
