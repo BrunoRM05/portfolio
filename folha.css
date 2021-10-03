@@ -1,0 +1,57 @@
+*{
+    margin: 0px;
+    padding: 0%;
+}
+
+
+
+.header1 {
+    display: grid;
+    grid-template-areas: "redes redes nav " "menu menu";
+    background-color: black;
+    height: 3em; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.redes {
+    color: rgb(255, 255, 255) ;
+    text-align:left;
+    grid-area: redes;
+    justify-content: end;
+    width: 50%;
+    
+    
+    
+}
+
+.logo {
+    color: white;
+    text-align: left;
+    grid-area: logo;
+    justify-content: end;
+    
+   
+}
+
+.nav-bar {
+    grid-area: menu;
+    background-color: rgb(0, 0, 0);
+    height: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+li a  {
+
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    height: 100%;
+
+    
+}
+
+ul a {
+    text-align: center;
+
+}
+
