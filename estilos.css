@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#menu-principal {
+    
+}
+
+nav{
+    background-color: #000000;
+    display: grid;    
+    grid-template-areas: "logo redes";
+    height: 3rem;
+}
+
+div.header1 a {
+    grid-area: logo;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    padding-left: 2em;  
+    
+    }
+
+.redes 
+    {
+       grid-area: redes;
+     
+       
+   }
+
+.redes img {
+    max-width:2rem;
+    max-height:2rem;
+    width: auto;
+    height: auto;
+    }
+   
+
+footer
+{
+    background-color: #313131;
+    display: grid;    
+    grid-template-areas: "logo redes";    
+}
+
