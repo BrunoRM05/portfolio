@@ -6,7 +6,8 @@
 }
 
 #menu-principal {
-    
+    display: grid;    
+    grid-template-areas: "logo" "corpo " " footer";
 }
 
 nav{
@@ -14,35 +15,77 @@ nav{
     display: grid;    
     grid-template-areas: "logo redes";
     height: 3rem;
+    width: 100%;
 }
 
-div.header1 a {
+.logo {
     grid-area: logo;
     color: rgb(255, 255, 255);
-    font-size: 2rem;
-    padding-left: 2em;  
+    font-size: 1.5rem;
+    padding-left: 13%;  
+    padding-top: 0.3em;
+    }
+
+.menu{
     
-    }
+    list-style: none;
+    color: white;
+    padding-left: 50%;
+    padding-top: 0.8em;
+    
+}
 
-.redes 
-    {
-       grid-area: redes;
-     
-       
-   }
+li a{
+    color: rgb(255, 255, 255);
+    padding: 0.5em;
+    
+}
 
-.redes img {
-    max-width:2rem;
-    max-height:2rem;
-    width: auto;
-    height: auto;
-    }
-   
+li a:hover{
+    color: rgb(139, 139, 139);
+    padding: 0.5em;
+    transition: 300ms;
+    
+}
+
+
+main {
+    display: grid;
+    grid-area: corpo;
+    height: 50px;
+    background-color: rgb(48, 61, 184);
+}
+
 
 footer
 {
     background-color: #313131;
-    display: grid;    
-    grid-template-areas: "logo redes";    
+    display: grid;
+    grid-area: footer;    
+    grid-template-areas: "logo redes";   
+    height: 10em; 
 }
 
+.logo-footer {
+    grid-area: logo;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    padding-left: 2em;
+    padding-top: 2em%;  
+    }
+
+.icon-redes {
+    
+        padding-left: 50%;
+        padding-top: 2%;
+        list-style: none;
+       
+    }
+
+.redes img {
+        max-width:2rem;
+        max-height:2rem;
+        width: auto;
+        height: auto;
+        
+        }
