@@ -16,14 +16,15 @@ nav{
     grid-template-areas: "logo redes";
     height: 3rem;
     width: 100%;
+    
 }
 
-.logo {
+.logo{
     grid-area: logo;
     color: rgb(255, 255, 255);
     font-size: 1.5rem;
-    padding-left: 13%;  
-    padding-top: 0.3em;
+    padding-left: 10%;
+    padding-top: 10px;
     }
 
 .menu{
@@ -52,8 +53,9 @@ li a:hover{
 main {
     display: grid;
     grid-area: corpo;
-    height: 50px;
-    background-color: rgb(48, 61, 184);
+    height: 500px;
+    background-color: rgb(48, 61, 184) ;
+    
 }
 
 
@@ -70,8 +72,8 @@ footer
     grid-area: logo;
     color: rgb(255, 255, 255);
     font-size: 1.5rem;
-    padding-left: 2em;
-    padding-top: 2em%;  
+    padding-left: 10%;
+    padding-top: 10px; 
     }
 
 .icon-redes {
