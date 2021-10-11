@@ -262,8 +262,9 @@ body {
  
  @media screen and (max-width: 767px) {
     .content {
-       padding-top: 300px;
+       padding-top: 30px;
        flex-direction: column;
+       
     }
  }
  
