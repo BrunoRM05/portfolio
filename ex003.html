@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso-JS ex.04</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/estiloex003.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <Style>
+        h1 ,p {
+            padding: 2rem;
+            text-align: center;
+        }
+    </Style>
+
+</head>
+<body>
+
+    <header>
+        <nav>
+          <div class="logo" >
+              <a>BrunoRM05</a>           
+        </div>
+            <div> 
+             <ul>
+            <li class="menu">
+                <a href="index.html">Home</a>
+                <a href="#">Sobre</a>
+                <a href="portfolio.html">Portfólio</a>
+                <a href="#">Contato</a>
+            </li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+
+    <h1>Atualize</h1>
+   
+    <p>Atualize para reiniciar</p>
+    
+    <script>
+        window.confirm  ('Olá! fiquei sabendo que voce quer fazer umas continhas, é verdade ?')
+        var nome = (window.prompt ('só preciso saber seu nome antes, para te atender melhor!rs'))
+        window.alert (`legal ${nome} prazer em te conhecer! Agora vamos começar ?`)
+
+        var n1 = Number (window.prompt (` ${nome} Preciso que digite o primeiro numero para somar:`))
+
+        var n2 = Number (window.prompt ('Digite o outro numero para somar:'))
+
+        var resultado = n1 + n2
+
+        window.alert(`${nome} Obrigado por aguardar. A soma de ${n1} e ${n2} é igual a  ${resultado}` )
+
+        window.alert ('Obrigado por usar o serviço! Se precisar fazer outra soma é só atualizar!')
+    </script>
+    
+</body>
+</html>
