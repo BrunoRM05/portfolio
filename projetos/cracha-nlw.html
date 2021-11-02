@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruno Miranda - DoWhile</title>
+    <link rel="stylesheet" href="/css/estilo-cracha.css">
+    
+    
+</head>
+<body>
+
+    <header>
+        <nav>
+          <div class="logo" >
+              <a>BrunoRM05</a>           
+        </div>
+             
+             <div class="menu">
+            <li >
+                <a href="/index.html">Home</a>
+                <a href="">Sobre</a>
+                <a href="/portfolio.html">Portfólio</a>
+                <a href="#">Contato</a>
+            </li>
+        </div>
+           
+        
+        
+        </nav>
+    </header>
+
+    <main>
+        <div class="content">
+            <div class="avatar">
+                <span>
+                    <img src="images/selorocket.svg" alt="selo rockerseat">
+                </span>
+                <img src="images/brunorm005.jpg" alt="Foto Pessoal">
+            </div>
+            
+    <h1 id="userName">Bruno Miranda</h1>
+    <div class="perfil_git">
+    <img src="images/github 2.svg" alt="github">
+    <a href="https://github.com/BrunoRM05"target="_blank">bruno.rm005</a>
+</div>
+    
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
+    <ul id="socialLinks">
+        <li class="Youtube">
+            <a href="https://www.youtube.com/" target="_blank"><img src="images/YT.svg" alt=""></a>
+        </li>
+        <li class="Instagram">
+            
+            <a href="https://www.instagram.com/bruno_tiko/?hl=pt-br"target="_blank"><img src="images/insta.svg" alt=""></a>
+        </li>
+        <li class="facebook">
+            <a href="https://www.facebook.com/bruno.rodrigues.71653/" target="_blank"><img src="images/face.svg" alt=""></a>
+        </li>
+        <li class="twitter">
+            <a href="https://twitter.com/" target="_blank" ><img src="images/twitter.svg" alt=""></a>
+        </li>
+    </ul>
+</div>
+</main>
+
+<script>
+  
+        const linksSocialMedia = {
+
+            github: "BrunoRM05",
+            youtube: "Bruno Rodrigues de Miranda",
+            facebook: "Bruno Rodrigues",
+            instagram: "bruno_tiko"
+
+        }
+
+        function changeSocialMediaLinks() {
+            for (let li of socialLinks.children){
+                const social = li.getAttribute('class')
+
+                li.children[0].href = ` https://${social}.com/${linksSocialMedia[social]}`
+
+                alert(li.children[0].href)
+
+            }
+        }
+
+        changeSocialMedia()
+
+</script>
+</body>
+</html>
