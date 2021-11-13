@@ -19,12 +19,15 @@ nav{
     grid-template-areas: "logo redes";
     height: 3rem;
     width: 100%;
+    position: fixed;
+    z-index: 99;
+
 
  
     
 }
 
-@media only screen and (max-width: 1050px)
+@media only screen and (max-width: 1100px)
 {
   nav
    {
@@ -35,6 +38,19 @@ nav{
     width: 100%;
    }
 }
+
+@media only screen and (max-width: 750px)
+{
+  nav
+   {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+    width: 100%;
+   }
+}
+
 
 .logo{
     color: rgb(255, 255, 255);
@@ -53,7 +69,7 @@ nav{
 }
 
 
-@media only screen and (max-width: 1050px)
+@media only screen and (max-width: 1100px)
 {
     .container_Menu .menu 
    {
@@ -77,6 +93,16 @@ nav{
     align-items: center;
     margin: 0 auto;
     height: 2rem;
+    
+   
+   }
+}
+
+@media only screen and (max-width: 750px)
+{
+    li a
+   {
+    z-index: -99;
     
    
    }
