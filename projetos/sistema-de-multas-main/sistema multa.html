@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex009Estilizado</title>
+    <style>
+
+      *{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+  body{
+    background-color: rgb(35, 67, 136);
+    height: 100%;
+    width: 100%;
+  }
+
+  main{
+    width: 60vh;
+    height: 80vh;
+    background-color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto; 
+    border-radius: 0% 0% 03% 03% ;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.295);
+    
+  }
+
+  .input_Vel{
+    text-align: center;
+  }  
+  
+  
+  .btn {
+    border-radius: 4px;
+    background-color: #2c2c2c;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    background-color: #141414;
+    font-size: larger;
+    
+}
+
+  .btn:hover{
+    width: 205px;
+    display: flex;
+    justify-content: center;
+    background-color: #3f3f3f;
+
+}
+
+.res1{
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 16px;
+
+}
+
+.res_multado{
+  color: red;
+}
+
+h3{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+</style>
+</head>
+<body>
+<main>
+<div class="input_Vel">
+    <h1>Sistema de Multas</h1>
+    <h3>velocidade do carro: </h3> <input type="number" name="txtvel" id="txtvel"> km/h 
+</div>
+
+<div id="res"></div>
+
+
+  <div>
+   <input class="btn" type="button" value="Verificar"onclick="calcular()">
+  </div>
+
+
+    <script>
+        function calcular() {
+        var txtv = window.document.querySelector('input#txtvel')
+        var res = window.document.querySelector(`div#res`)
+        var vel = Number(txtv.value)
+        res.innerHTML = `<p class="res1"> Sua velocidade atual é de <strong> ${vel}Km/H </strong></p>`
+        if (vel > 60) {
+          res.innerHTML = `<p class="res1"> Sua velocidade atual é de <strong class="res_multado"> ${vel}Km/H. Infelizmente você foi multado </strong></p>`
+        } 
+        res.innerHTML += `<p class="res1"> Dirija sempre com cinto de  <strong> Segurança </strong></p>`
+
+        
+        /*
+        
+        tentando inserir essa função
+
+        function clean ()
+    {
+        document.getElementById('resultado').innerHTML = "" ;
+    }
+       
+        res.innerHTML = `<input class="btn" type="button" value="Zerar"onclick="clean()">`*/
+  
+
+    }
+   
+
+
+
+    </script>
+</main>
+</body>
+</html>
